@@ -1,0 +1,269 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format(truetype);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('fonts/Roboto-Bold.ttf') format(truetype);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'RobotoMed';
+    src: url('fonts/Roboto-Medium.ttf') format(truetype);
+    font-weight: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    
+}
+
+:root{
+    --cinza- : #424242;
+    --verde- : #1EA358;
+    --sombra- : #0000005d;
+}
+
+body{
+    background-image: url(imagens/triangulo.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 35%;
+}
+
+input:hover{
+    transition: 0.3s;
+}
+
+/*CABEÇALHO---------------------------------------------------------*/
+header{
+    display: flex;
+    align-items: center;
+    height: 83px;
+    border-bottom: 0.5px solid var(--cinza-);
+    padding: 0 83px;
+    justify-content: space-between;
+    background-color: white;
+}
+/*div para ajustar a logo e a nav do cabeçalho-------------------------*/
+.div-menu{
+    display: flex;
+    align-items: center;
+    
+}
+
+#linha-menu{
+    width: 0.5px;
+    height: 54px;
+    background-color: var(--cinza-);
+    margin: 0 15px 0 20px;
+}
+.menu ul li{
+    max-width: 79px;
+    display: inline;
+    padding: 26px;
+    list-style: none;
+    margin: 0;
+    
+}
+.menu a{
+    text-decoration: none;
+    color: var(--cinza-);
+}
+
+.busca{
+    width: 260px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+    border: 1px solid var(--cinza-);
+    border-radius: 20px;
+    margin-left: 135px;
+}
+
+.lupa{
+    margin: 0 12px;
+    color: var(--cinza-);
+}
+
+.input-buscar input{
+    border: 0;
+    outline: 0;
+    width: 115%;
+    
+}
+.botao-menu{
+    display: flex;
+    gap: 10px;
+    
+}
+.botao-menu input{
+    padding: 10px;
+    border-radius: 25px;
+    border: solid 1px;
+    height: 39px;
+    background-color: white;
+    font-family: 'RobotoMed';
+    
+}
+
+.botao-menu .cadastro{
+    background-color: var(--verde-);
+    color: white;
+    border: var(--verde-);
+}
+
+.cadastro:hover{
+    background-color: #226d42;
+    cursor: pointer;
+}
+
+.entrar:hover{
+    background-color: var(--cinza-);
+    color: white;
+    cursor: pointer;
+}
+
+ul li i{
+    margin-left: 5px;
+    padding: 1px;
+}
+
+/*texto persoasivo-----------------------------------*/
+.persoasivo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 94px 0;
+}
+
+.persoasivo h1{
+    font-size: 35px;
+}
+
+.txt1{
+    margin-right: 130px;
+}
+.txt2{
+    margin-left: 130px;
+}
+.persoasivo p{
+    padding-top: 10px;
+}
+/*PLANOS*/
+.plano{
+    background-color: white;
+    border-radius: 42px;
+    border: 1px solid #DCDCDC;
+    width: 263px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px var(--sombra-);
+}
+.plano .mega{
+    padding: 20px 10px 10px 10px;
+    margin: 20px 36px;
+}
+.bi-wifi{
+    padding-right: 7.12px;
+}
+.plano .valor{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.plano .valor p{
+    padding-top: 8px;
+}
+.plano input{
+    width: 199px;
+    height: 51px;
+    background-color: var(--verde-);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-family: 'RobotoBold';
+    margin-top: 30px;
+}
+.plano input:hover{
+    background-color: #226d42;
+    cursor: pointer;
+}
+.vantagens{
+    text-align: left;
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+.vantagens i{
+    padding: 15px;
+    font-size: 18px;
+}
+.bi-check2{
+    color: var(--verde-);
+}
+.vantagens p{
+    padding: 3px 0;
+    font-size: 14px;
+}
+.bi-x{
+    color: #ff0000;
+}
+/*PLANO 3*/
+.plano3{
+    background-color: white;
+    border-radius: 42px;
+    border: 3px solid #7A5100;
+    width: 263px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px var(--sombra-);
+}
+.plano3 .mega{
+    padding: 20px 10px 10px 10px;
+    margin: 20px 36px;
+}
+.plano3 .valor{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.plano3 .valor p{
+    padding-top: 8px;
+}
+.plano3 input{
+    width: 199px;
+    height: 51px;
+    background-color: var(--verde-);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-family: 'RobotoBold';
+    margin-top: 30px;
+}
+.plano3 input:hover{
+    background-color: #226d42;
+    cursor: pointer;
+}
+.especial{
+    position: absolute;
+    background-color: #7A5100;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 0 0 10px 10px;
+}
+/*alinhamento de planos*/
+.planos{
+    display: flex;
+    gap: 74px;
+    justify-content: center;
+    padding: 0 83px;
+}
