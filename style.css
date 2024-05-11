@@ -13,6 +13,7 @@
     src: url('fonts/Roboto-Medium.ttf') format(truetype);
     font-weight: normal;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -38,7 +39,7 @@ input:hover{
     transition: 0.3s;
 }
 
-/*CABEÇALHO---------------------------------------------------------*/
+/*CABEÇALHO---------------------------------------------------------------------------------------------------+----------------------------------------------------*/
 header{
     display: flex;
     align-items: center;
@@ -48,7 +49,7 @@ header{
     justify-content: space-between;
     background-color: white;
 }
-/*div para ajustar a logo e a nav do cabeçalho-------------------------*/
+/*div para ajustar a logo e a nav do cabeçalho----------------------------------------------------------*/
 .div-menu{
     display: flex;
     align-items: center;
@@ -64,7 +65,6 @@ header{
 .menu ul li{
     max-width: 79px;
     display: inline;
-    padding: 26px;
     list-style: none;
     margin: 0;
     
@@ -72,8 +72,90 @@ header{
 .menu a{
     text-decoration: none;
     color: var(--cinza-);
+    padding: 38px 26px;
 }
+/*dropdowns------------------------------------------------------------------------------------------------*/
+.dropdown-plano{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+    border-radius: 0 0 10px 10px;
+    margin-top: 32px;
+    margin-left: 10px;
+    display: none;
+}
+.dropdown-plano a{
+    display: block;
+    padding: 15px;
+}
+.ultimo-lista{
+    border-radius: 0 0 10px 10px;
+}
+.drop-plano:hover .dropdown-plano{
+    display: block;
+}
+.dropdown-plano a:hover{
+    background-color: var(--verde-);
+    color: white;
+    transition: 0.2s;
+}
+.dropdown-atendimento{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+    border-radius: 0 0 10px 10px;
+    margin-top: 32px;
+    margin-left: 140px;
+    display: none;
 
+}
+.dropdown-atendimento a{
+    display: block;
+    padding: 15px;
+}
+.drop-atendimento:hover .dropdown-atendimento{
+    display: block;
+}
+.dropdown-atendimento a:hover{
+    background-color: var(--verde-);
+    color: white;
+    transition: 0.2s;
+}
+.dropdown-regioes{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+    border-radius: 0 0 10px 10px;
+    margin-top: 32px;
+    margin-left: 305px;
+    display: none;
+
+}
+.dropdown-regioes a{
+    display: block;
+    padding: 15px;
+}
+.drop-regioes:hover .dropdown-regioes{
+    display: block;
+}
+.dropdown-regioes a:hover{
+    background-color: var(--verde-);
+    color: white;
+    transition: 0.2s;
+}
+/*barra de pesquisa--------------------------------------------------------------------------------*/
 .busca{
     width: 260px;
     height: 39px;
@@ -97,6 +179,7 @@ header{
     width: 115%;
     
 }
+/*botoes de log in---------------------------------------------------------------------------------*/
 .botao-menu{
     display: flex;
     gap: 10px;
@@ -134,7 +217,7 @@ ul li i{
     padding: 1px;
 }
 
-/*texto persoasivo-----------------------------------*/
+/*texto persoasivo-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .persoasivo{
     display: flex;
     flex-direction: column;
@@ -155,7 +238,7 @@ ul li i{
 .persoasivo p{
     padding-top: 10px;
 }
-/*PLANOS*/
+/*PLANOS----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .plano{
     background-color: white;
     border-radius: 42px;
@@ -215,7 +298,7 @@ ul li i{
 .bi-x{
     color: #ff0000;
 }
-/*PLANO 3*/
+/*PLANO 3--------------------------------------------------------------------------------------*/
 .plano3{
     background-color: white;
     border-radius: 42px;
@@ -260,7 +343,7 @@ ul li i{
     padding: 5px 10px;
     border-radius: 0 0 10px 10px;
 }
-/*alinhamento de planos*/
+/*alinhamento de planos-------------------------------------------------------------------------------------*/
 .planos{
     display: flex;
     gap: 74px;
