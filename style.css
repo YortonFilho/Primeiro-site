@@ -74,6 +74,10 @@ header{
     color: var(--cinza-);
     padding: 38px 26px;
 }
+.menu a:hover{
+    color: var(--verde-);
+    font-weight: bold;
+}
 /*dropdowns------------------------------------------------------------------------------------------------*/
 .dropdown-plano{
     position: absolute;
@@ -85,7 +89,7 @@ header{
     border-bottom: 0.5px solid black;
     border-radius: 0 0 10px 10px;
     margin-top: 32px;
-    margin-left: 10px;
+    margin-left: 103px;
     display: none;
 }
 .dropdown-plano a{
@@ -113,7 +117,7 @@ header{
     border-bottom: 0.5px solid black;
     border-radius: 0 0 10px 10px;
     margin-top: 32px;
-    margin-left: 140px;
+    margin-left: 230px;
     display: none;
 
 }
@@ -125,32 +129,6 @@ header{
     display: block;
 }
 .dropdown-atendimento a:hover{
-    background-color: var(--verde-);
-    color: white;
-    transition: 0.2s;
-}
-.dropdown-regioes{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-left: 0.5px solid black;
-    border-right: 0.5px solid black;
-    border-bottom: 0.5px solid black;
-    border-radius: 0 0 10px 10px;
-    margin-top: 32px;
-    margin-left: 305px;
-    display: none;
-
-}
-.dropdown-regioes a{
-    display: block;
-    padding: 15px;
-}
-.drop-regioes:hover .dropdown-regioes{
-    display: block;
-}
-.dropdown-regioes a:hover{
     background-color: var(--verde-);
     color: white;
     transition: 0.2s;
@@ -349,4 +327,85 @@ ul li i{
     gap: 74px;
     justify-content: center;
     padding: 0 83px;
+}
+/*formulario login modal------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.janela-form{
+    width: 100vw;
+    height: 100vh;
+    background-color: #424242a9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    background-color: rgba(255, 255, 255, 0.377);
+    backdrop-filter: blur(10px);
+    width: 250px;
+    height: 350px;
+    border-radius: 42px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+}
+.senha{
+    display: flex;
+    flex-direction: column;
+}
+#email, #password{
+    border-radius: 20px;
+    height: 35px;
+    border: 1px solid #DCDCDC;
+    padding-left: 10px;
+
+}
+.form label{
+    margin-left: 10px;
+}
+.form .botao{
+    border-radius: 20px;
+    height: 35px;
+    background-color: var(--verde-);
+    color: white;
+    border: var(--verde-);
+}
+.form .botao:hover{
+    background-color: #226d42;
+    cursor: pointer;
+}
+.form a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.checkbox{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.janela-form.abrir{
+    display: flex;
+}
+@keyframes abrirform{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -300px, 0px);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.abrir .form{
+    animation: abrirform 1s;
 }

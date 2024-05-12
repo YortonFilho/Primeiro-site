@@ -9,12 +9,13 @@
 </head>
 
 <body>
-    <header>
+    <header>  <!--header---------------------------------------------------------------------------------------------------------->
         <div class="div-menu">
             <figure class="logo"><a href="#"><img src="imagens/logoPreta.png" alt="" width="160" min-height="54"></a></figure>
             <div id="linha-menu"></div> <!--linha entre a logo e a nav-->
             <nav class="menu">
                 <ul>
+                    <li><a href="">Início</a></li>
                     <li class="drop-plano"><a href="#">Planos<i class="bi bi-chevron-down"></i></a>
                         <div class="dropdown-plano">
                             <a href="">Para pessoas</a>
@@ -27,15 +28,7 @@
                             <a href="" class="ultimo-lista">Reclamações</a>
                         </div>
                     </li>
-                    <li class="drop-regioes"><a href="#">Regiões<i class="bi bi-chevron-down"></i></a>
-                        <div class="dropdown-regioes">
-                            <a href="">Cachoeirinha</a>
-                            <a href="">Canoas</a>
-                            <a href="">Porto Alegre</a>
-                            <a href="">Sapucaia</a>
-                            <a href="" class="ultimo-lista">Viamão</a>
-                        </div>
-                    </li>
+                    <li><a href="#">Sobre nós</i></a></li>
                 </ul>
             </nav>
         </div>
@@ -47,21 +40,21 @@
                     <input type="text" name="" id="" placeholder="Buscar">
                 </div>
             </div>
-            
+
         <div class="botao-menu">
-            <input type="button" value="Entrar" class="entrar">
+            <input type="button" value="Entrar" class="entrar" onclick="abrirModal()">
             <input type="button" value="Cadastre-se" class="cadastro">
         </div>
     </header>
 
-    <main>
+    <main> <!--texto persoasivo--------------------------------------------------------------------------------------------------------->
         <section class="persoasivo">
             <h1 class="txt1"><i class="bi bi-plus-lg"></i></i>Velocidade</h1>
             <h1 class="txt2"><i class="bi bi-dash"></i>Dor de cabeça</h1>
             <p>A provedora de internet mais confiável, conectando você ao mundo!</p>
         </section>
 
-        <section class="planos">
+        <section class="planos"> <!--planos--------------------------------------------------------------------------------------------->
             <div class="plano">
                 <h1 class="mega"><i class="bi bi-wifi"></i>100 MEGA</h1>
                 <div class="valor">
@@ -125,5 +118,27 @@
             </div>
         </section>
     </main>
+    <div class="janela-form" id="janela-form"> <!--formulario login modal------------------------------------------------------------------------------>
+        <form class="form">
+            <div class="email">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="senha">
+                <label for="password">Senha:</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <input type="submit" value="Entrar" class="botao">
+            <div class="checkbox">
+                <span>Lembrar senha?</span>
+                <input type="checkbox" name="" id="">
+            </div>
+            <a href="">Esqueceu sua senha?</a>
+        </form>
+    </div>
+    <!--JAVASCRIP-------------------------------------------------------------------------------------------------------------------->
+    <script src="script.js">
+
+    </script>
 </body>
 </html>
